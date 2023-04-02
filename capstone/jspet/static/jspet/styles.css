@@ -1,0 +1,12 @@
+.body {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+#canvas1 {
+    /* border: solid 1px black; */
+    width: 50%;
+}
+#sprite-sheet {
+    display: none;
+}

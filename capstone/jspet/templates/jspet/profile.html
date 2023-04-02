@@ -1,0 +1,48 @@
+{% extends "jspet/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+
+    {% if user.is_authenticated %}
+        {% if pet %}
+        <h2>{{ pet.name }}</h2>
+        <br>{% csrf_token %}
+        <div id="manage-view">
+            <button id="play-btn" type="button" class="btn btn-outline-secondary">Play</button>
+            <button id="feed-btn" type="button" class="btn btn-outline-secondary">Feed</button>
+            <button id="water-btn" type="button" class="btn btn-outline-secondary">Water</button>
+            <button id="nap-btn" type="button" class="btn btn-outline-secondary">Nap</button>
+            <button id="wake-btn" type="button" class="btn btn-outline-secondary">Wake up</button>
+            <div id="pet-status">
+                <div id="missed"></div>
+                <div id="happy"></div>
+                <div id="hungry"></div>
+                <div id="thirsty"></div>
+            </div>
+        </div>
+        {% else %}
+            <div class="bd-example">
+                <form id="new-pet-form" action="{% url 'create' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <p>Welcome to JS-Pet!</p>
+                        <p>First, your new pet needs a name</p>
+                        <input type="text" id="new-pet-name" name="new-pet-name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-outline-secondary">
+                    </div>
+                </form>
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <canvas id="canvas1" >Your browser doesn't support HTML5 canvas tag </canvas>
+    <img src="{% static 'jspet/shadow_dog.png' %}" alt="shadow sprite sheet" id="sprite-sheet">
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'jspet/index.js' %}"></script>
+    <script src="{% static 'jspet/shadow.js' %}"></script>
+{% endblock %}

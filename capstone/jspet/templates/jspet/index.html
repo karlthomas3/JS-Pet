@@ -1,0 +1,20 @@
+{% extends "jspet/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+
+   <h1>Welcome to JS-Pet!</h1>
+   <div class="container">
+      <p>Now you can have your very own virtual puppy!
+         Just make sure to come back and take care of them
+         because they need food, water, and will get very sad
+         if you don't come play with them regularly.
+      </p>
+      <img style="width: 60%;" src="{% static 'jspet/shadow_image.png' %}" alt="">
+   </div>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
