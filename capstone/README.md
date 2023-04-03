@@ -1,5 +1,6 @@
 CAPSTONE - JS-Pet
 ====
+#### Video Demo:  <https://youtu.be/ShQRQqIn_NY>
 Description
 ----
 Welcome to JS-Pet!
