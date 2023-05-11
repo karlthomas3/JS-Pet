@@ -23,7 +23,7 @@ The second brings the whole thing to life with animation! This required quite a 
 
 How to run
 ----
-Just 'django manage.py runserver' like you would any django project. The default '' url will take you to the index/welcome screen. Register a login and name your new pet.
+Just 'python manage.py runserver' like you would any django project. The default '' url will take you to the index/welcome screen. Register a login and name your new pet.
 
 The Files
 ====
