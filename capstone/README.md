@@ -5,21 +5,10 @@ Description
 ----
 Welcome to JS-Pet!
 
-This is my final project for the CS50 web development track. It was built using HTML, CSS, Bootstrap, Python, Django, and of course, JavaScript.
 
 In brief, its a web-based pet ah-la Tomogatchi.
 You can give it food and water, play with it or just let it take a nap while you work! The app keeps track of how well the pet is doing and saves itself if you close the browser or navigate away.
 
-Distinctiveness and Complexity
-----
-****
-I think its distinctiveness speaks for itself. Over the length of the course we made a social media site, an email client, a wiki, and even an auction site but nothing even remotely like a virtual pet.
-
-This project runs on Django for the back end and really only required one model I'll describe later. While the login, logout, and register pages are quite standard the real gem of this project and its main claims to complexity lie in its JavaScript. I broke it up into two separate scripts to keep it straight in my head as they each handle very different aspects of the project.
-
-One handles the management of the pet in terms of APIs, saving, loading, updating, as well as notifications to the user.
-
-The second brings the whole thing to life with animation! This required quite a bit of extra homework since this alone far exceeded the complexity of anything I had attempted in any cs50w projects.
 
 How to run
 ----
